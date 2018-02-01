@@ -1,8 +1,4 @@
-body {
-    color: #335145;
-    background: #1E441E;
-    font-family: 'Open Sans', sans-serif;
-}
+
 .rowE {
     width: 100%;
     height: 50px;
@@ -28,6 +24,6 @@ body {
     left: 20%;
     width: 20%;
     background: #E2F9B8;
-    font-size: 16px;
+    font-size: 32px;
     padding: 10px 0;
 }
