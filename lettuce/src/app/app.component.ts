@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Lunch } from './lunch';
+import { Http } from '@angular/http';
+
 
 @Component({
   selector: 'app-root',
@@ -10,9 +12,9 @@ export class AppComponent {
   title = 'app';
 
   lunches = [
-    new Lunch("alicce", 11, 1, "#9EB25D"),
-    new Lunch("alice", 13, .5, "#EBF9D1"),
-    new Lunch("alicce", 12, .5, "#9EB25D")
+    new Lunch("Caroline", 11, 1),
+    new Lunch("Laura", 13, .5),
+    new Lunch("Natasha", 12, .5)
   ];
   times = [
     11, 12, 13, 14

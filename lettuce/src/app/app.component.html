@@ -14,8 +14,10 @@
         <div class="row rowE">
           <div [style.width]="lunch.width()" [style.left] = "lunch.left()" [style.background]="lunch.color"class = "lunch">
             {{lunch.name}} at {{lunch.time}}
-            <div ng-if="" class="details_holder"></div>
-            <button class="details" (click)="details = !details">Show details</button>
+            <div *ngIf="lunch.details" class="details_holder">
+              <button class="join">Join!</button>
+            </div>
+            <button class="details" (click)="lunch.details = !lunch.details">Show details</button>
           </div>
         </div>
       </div>
