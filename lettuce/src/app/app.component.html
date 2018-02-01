@@ -1,0 +1,42 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    </head>
+  <body>
+    <!-- <div class="row">
+      <div *ngFor="let item of times">{{item}}</div>
+    </div> -->
+    <table>
+      <thead>
+          <tr class="rowE"> 
+            <th>Day: 1/29/2018</th>
+          </tr>
+          <tr class="rowE">
+              <th *ngFor="let item of times" class="time" [style.width]="width(item)" [style.left] = "left(item)" >{{item}}:00</th>
+          </tr>
+      </thead>
+    
+      <tbody *ngFor="let lunch of lunches">
+        
+        <tr class="row rowE">
+          <td [style.width]="lunch.width()" [style.left] = "lunch.left()" [style.background]="lunch.color"class = "lunch">
+            {{lunch.name}} at {{lunch.time}}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+</body>
+</html>
+
+
+      <!-- <div *ngFor="let lunch of lunches" [style.width]="lunch.width()" [style.left] = "lunch.left()" [style.background]="lunch.color" class = "lunch" >
+        <div class="row rowE">
+         {{lunch.name}} at {{lunch.time}}
+      </div>
+  </div>
+
+  </body>
+  </html> -->
+
