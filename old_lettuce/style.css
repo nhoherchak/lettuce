@@ -1,0 +1,24 @@
+.lunch {
+  background: #7F96FF;
+}
+.title {
+  background: #82AD79;
+}
+.empty {
+  background: #B6D6CC;
+}
+.col-md-1,
+.col-md-12,
+.col-md-3,
+.col-md-2 {
+  padding: 10px 0;
+}
+.header {
+  background: #74A4BC;
+}
+.row {
+  position: relative;
+}
+.col {
+  position: absolute;
+}

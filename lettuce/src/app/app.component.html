@@ -1,0 +1,34 @@
+
+    <div>
+      <div>
+          <div class="rowE"> 
+            <div>Day: 1/29/2018</div>
+          </div>
+          <div class="rowE">
+              <div *ngFor="let item of times" class="time" [style.width]="width(item)" [style.left] = "left(item)" >{{item}}:00</div>
+          </div>
+        </div>
+    
+      <div *ngFor="let lunch of lunches">
+        
+        <div class="row rowE">
+          <div [style.width]="lunch.width()" [style.left] = "lunch.left()" [style.background]="lunch.color"class = "lunch">
+            {{lunch.name}} at {{lunch.time}}
+            <div *ngIf="lunch.details" class="details_holder">
+              <button class="join">Join!</button>
+            </div>
+            <button class="details" (click)="lunch.details = !lunch.details">Show details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- <div *ngFor="let lunch of lunches" [style.width]="lunch.width()" [style.left] = "lunch.left()" [style.background]="lunch.color" class = "lunch" >
+        <div class="row rowE">
+         {{lunch.name}} at {{lunch.time}}
+      </div>
+  </div>
+
+  </body>
+  </html> -->
+
